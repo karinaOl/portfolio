@@ -1,0 +1,20 @@
+.footer {
+    background-color: #fcedea;
+    padding: 50px 0;
+}
+
+.containerFooter {
+    flex-direction: column;
+
+}
+
+.title {
+    background: #d2ba90;
+}
+
+.socialIcon {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: #f8abd4;
+}
