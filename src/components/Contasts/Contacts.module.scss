@@ -1,0 +1,87 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+
+.container {
+  @include container();
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .column {
+      width: 40%;
+      padding: 10px;
+
+      h4 {
+        @include fontStyle($fontFamily, 20px, $primaryColor);
+        font-weight: 600;
+        padding: 10px 15px;
+        margin: 0;
+      }
+
+      &:last-child {
+        width: 60%;
+      }
+
+      @media screen and (max-width: 960px) {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+
+        &:last-child {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .contactsList {
+    color: $textColor;
+    font-size: 20px;
+
+    .contact {
+      padding: 10px 15px;
+
+      span {
+        padding: 5px;
+      }
+
+      a {
+        padding: 5px;
+        color: $textColor;
+        text-decoration: none;
+
+        &:hover {
+          color: $primaryColor
+        }
+      }
+    }
+  }
+
+  .containerIcons {
+    display: flex;
+
+    @media screen and (max-width: 960px) {
+      justify-content: center;
+    }
+
+    .icon {
+      a {
+        padding: 15px;
+        color: $textColor;
+        font-size: xx-large;
+      }
+
+      &:hover {
+        a {
+          color: $primaryColor
+        }
+      }
+    }
+  }
+}
+
+
+
+

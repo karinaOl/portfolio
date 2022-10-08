@@ -1,0 +1,32 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.container {
+  @include container();
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .column {
+      width: 50%;
+      padding: 0 10px;
+
+      @media screen and (max-width: 960px) {
+        width: 100%;
+      }
+
+      .title {
+        @include fontStyle($fontFamily, 20px, $primaryColor);
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .text {
+        font-family: $fontFamily;
+        color: $textColor;
+      }
+    }
+  }
+}

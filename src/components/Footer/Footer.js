@@ -1,19 +1,11 @@
-import style from "./Footer.module.css"
-import styleContainer from "./../../common/styles/Container.module.css"
+import styles from "./Footer.module.scss";
 
 export const Footer = () => {
   return(
-      <div className={style.footer}>
-          <div className={`${styleContainer.container} ${style.containerFooter}`}>
-              <h3 className={style.title}>Olkovich Karina</h3>
-              <div>
-                  <a href={"icon"} className={style.socialIcon}>icon</a>
-                  <a href={"icon"} className={style.socialIcon}>icon</a>
-                  <a href={"icon"} className={style.socialIcon}>icon</a>
-                  <a href={"icon"} className={style.socialIcon}>icon</a>
-              </div>
-              <span>2022 All rights reserved</span>
+      <section>
+          <div className={styles.container}>
+              <span> © 2022 Olkovich Karina. All rights reserved</span>
           </div>
-      </div>
+      </section>
   )
 }

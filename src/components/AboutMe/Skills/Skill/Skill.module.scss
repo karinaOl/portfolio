@@ -1,0 +1,40 @@
+@import "../../../../common/styles/sass/variables";
+.skill {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    color: $textColor;
+    font-family: $fontFamily;
+    font-size: 15px;
+    h3 {
+        font-weight: 500;
+    }
+    .icon {
+        height: 60px;
+        width: 60px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .html5 {
+        background-image: url("../../../../assets/image/html_icon.svg");
+    }
+
+    .css3 {
+        background-image: url("../../../../assets/image/css_icon.svg");
+    }
+
+    .js {
+        background-image: url("../../../../assets/image/javascript_icon.svg");
+    }
+
+    .react {
+        background-image: url("../../../../assets/image/react_icon.svg");
+    }
+}
+
+

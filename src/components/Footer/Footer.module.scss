@@ -1,0 +1,9 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.container {
+  @include container();
+  font-family: $fontFamily;
+  color: $primaryColor;
+    text-align: center;
+}

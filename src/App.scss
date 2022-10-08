@@ -1,0 +1,16 @@
+@import "./common/styles/sass/variables";
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    main {
+        > section {
+            position: relative;
+            padding: 20px 0;
+            overflow: hidden;
+            background-color: $bgColor;
+        }
+    }
+}

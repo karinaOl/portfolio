@@ -1,0 +1,12 @@
+@mixin container() {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border: 1px solid deeppink;
+}
+
+@mixin fontStyle($fontFamily, $fontSize, $color) {
+  font-family: $fontFamily;
+  color: $color;
+  font-size: $fontSize;
+}

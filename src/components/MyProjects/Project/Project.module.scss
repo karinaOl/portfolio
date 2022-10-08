@@ -1,0 +1,71 @@
+@import "../../../common/styles/sass/variables";
+@import "../../../common/styles/sass/mixins";
+
+
+.project {
+  width: 300px;
+  margin: 0 20px 35px 20px;
+
+  .thumb {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 5px solid #ffc107;
+    overflow: hidden;
+
+    .iconsContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      transition: ease-in-out 0.3s;
+
+      .showMore {
+        padding: 5px 10px;
+        background-color: $bgSecondColor;
+        border-radius: 5px;
+        display: none;
+        @include fontStyle($fontFamily, 20px, $primaryColor);
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .description {
+    background-color: $bgSecondColor;
+    padding: 20px 25px 25px 25px;
+    border-radius: 0 0 5px 5px;
+
+    .title {
+      @include fontStyle($fontFamily, 26px, $textColor);
+      font-weight: 600;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    .iconsContainer {
+      transform: scale(1.1);
+
+      .showMore {
+        display: block;
+      }
+    }
+
+    .title {
+      color: $primaryColor;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+

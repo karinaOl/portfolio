@@ -1,9 +1,8 @@
-import './App.css';
+import './App.scss';
 import {Header} from "./components/Header/Header";
-import {Main} from "./components/Main/Main";
-import {Skills} from "./components/Skills/Skills";
+import {Home} from "./components/Home/Home";
+import {AboutMe} from "./components/AboutMe/AboutMe";
 import {MyProjects} from "./components/MyProjects/MyProjects";
-import {RemoteWork} from "./components/RemoteWork/RemoteWork";
 import {Contacts} from "./components/Contasts/Contacts";
 import {Footer} from "./components/Footer/Footer";
 
@@ -11,12 +10,13 @@ function App() {
     return (
         <div className="App">
             <Header/>
-            <Main/>
-            <Skills/>
-            <MyProjects/>
-            <RemoteWork/>
-            <Contacts/>
-            <Footer/>
+            <main>
+                <Home/>
+                <AboutMe/>
+                <MyProjects/>
+                <Contacts/>
+                <Footer/>
+            </main>
         </div>
     );
 }
